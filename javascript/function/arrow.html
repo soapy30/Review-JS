@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arrow function and this keyword</h1>
+    <h3>
+      한줄정리: <br />
+      화살표 함수에는 this가 없다. <br />
+      대신, <span style="color: blueviolet">바깥 스코프의 this를</span> 그대로
+      가져다 쓴다.
+    </h3>
+    <p>
+      따라서 객체의 메서드는 절대 화살표 함수로 만들지 않는다. <br />
+      그러나 콜백(setTimeout, map, forEach 등)에서는 화살표 함수가 유리하다.
+    </p>
+    <p>
+      정규 함수로 정의된 메서드는 호출한 객체를 this로 가지지만, 화살표 함수는
+      자신만의 this가 없어 바깥 스코프의 this를 사용한다. <br> 그래서 객체 메서드에
+      화살표 함수를 쓰면 this가 깨진다. <br> 반면, 메서드 내부의 콜백에서는 화살표
+      함수를 쓰면 this를 유지할 수 있다.
+    </p>
+    <script src="arrow.js"></script>
+  </body>
+</html>

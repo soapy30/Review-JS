@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      변수는 함수 내부에서만(함수 스코프), 또는 {블록} 내부에서만(블록 스코프)
+      유효하다
+    </h3>
+    <h4>
+      let과 const는 블록 스코프를 따르고, <br />
+      var는 함수 스코프만 따르기 때문에 의도와 다르게 범위를 벗어나 사용할 수
+      있어 비권장된다.
+    </h4>
+    <p>
+      <span style="font-weight: bolder">var</span> 키워드는 <br />
+      단순히 “옛날 문법”이어서 비권장 되는것이 아니라 <br />
+      블록 스코프 ❌ <br />
+      재선언 허용 ❌ <br />
+      호이스팅 + undefined ❌ <br />
+      버그를 조용히 만들어냄 😱
+    </p>
+    <hr />
+    <h3>lexical Scope</h3>
+    <h4>
+      렉시컬 스코프란 함수가 어디서 "실행"되었는지가 아니라 <br />
+      어디에서 "정의"되었는지를 기준으로 변수를 찾는 규칙 <br />
+      즉, 자바스크립트에서 함수는 만들어진 순간의 스코프를 기억한다.
+    </h4>
+    <script src="scope.js"></script>
+  </body>
+</html>
