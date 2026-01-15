@@ -1,0 +1,19 @@
+/* 일반적 사용 
+div {
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    display: block;
+} 
+*/
+
+/* app.js에서 지정한 클래스 */
+.pokemon {
+    display: inline-block;
+    text-align: center;
+}
+.pokemon img {
+    display: block;
+}
