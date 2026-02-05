@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Event</title>
+  </head>
+  <body>
+    <h1>Type Below!</h1>
+    <input type="text" />
+    <hr>
+    <h2>이벤트 버블링</h2>
+    <section onclick="alert('section clicked!!!')">
+        <p onclick="alert('paragraph clicked!!')"> I am the Paragraph:
+            <button onclick="alert('button clicked!')">click</button>
+        </p>
+    </section>
+    <script src="change.js"></script>
+  </body>
+</html>

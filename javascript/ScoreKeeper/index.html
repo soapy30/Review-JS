@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      .winner {
+        color: green;
+      }
+      .loser {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./img/game.png" alt="게임이미지" width="500px" height="100%" />
+    <h1><span id="p1_dp">0</span> to <span id="p2_dp">0</span></h1>
+    <select name="play" id="win_num">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <button id="p1_btn">+1 Player One</button>
+    <button id="p2_btn">+1 Player Two</button>
+    <button id="reset">Reset</button>
+    <script src="app2.js"></script>
+  </body>
+</html>
